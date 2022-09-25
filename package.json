@@ -13,6 +13,9 @@
     ".": {
       "import": "./dist/vite-library.js",
       "require": "./dist/vite-library.umd.cjs"
+    },
+    "./nuxt": {
+      "import": "./nuxt.js"
     }
   },
   "scripts": {
