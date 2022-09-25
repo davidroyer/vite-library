@@ -1,0 +1,30 @@
+{
+  "name": "@droyer/vite-library",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist",
+    "src",
+    "nuxt.js"
+  ],
+  "main": "./dist/vite-library.umd.cjs",
+  "module": "./dist/vite-library.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-library.js",
+      "require": "./dist/vite-library.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "vite": "^3.1.0"
+  }
+}
