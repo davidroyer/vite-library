@@ -1,7 +1,12 @@
-export default async (inlineOptions, nuxt) => {
+export default (inlineOptions, nuxt) => {
   // You can do whatever you like here..
-  console.log('@HERE - FROM NUXT FILE');
-  nuxt.hook('ready', async nuxt => {
-    console.log('Nuxt is ready');
+  console.log('@HERE2 - FROM NUXT FILE');
+
+  nuxt.hook('components:dirs', dirs => {
+    dirs.push({
+      path: join(__dirname, 'src/components'),
+      prefix: '',
+      extensions: ['vue']
+    });
   });
 };
