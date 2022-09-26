@@ -24,6 +24,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.11",
+    "path": "^0.12.7",
     "vue": "^3.2.37"
   },
   "devDependencies": {
